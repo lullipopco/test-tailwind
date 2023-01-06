@@ -3,4 +3,23 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tailwindui.com', 
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.shopify.com', 
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com', 
+      },
+    ],
+  },
+}
+  
+  
